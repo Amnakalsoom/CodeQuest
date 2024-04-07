@@ -4,20 +4,20 @@ interface Account{
 	public double pinnum();
 }
 abstract class Bankaccount implements Account{
-	//@override
+	@override
 	public double pinnum(double p) {
 		double pin=p;
 			System.out.println("pin is" +pin);
 			return pin;
 		}
-	//@override
+	@override
 		public double transaction() {
 			double transactionAmmount=400;
 			
 			System.out.println("transiction" +transactionAmmount);
 			return transactionAmmount;
 		}
-		//@override
+		@override
 		public double tax(double t) {
 			double taxAmmount=t;
 			System.out.println("tax is"+taxAmmount);
@@ -25,13 +25,13 @@ abstract class Bankaccount implements Account{
 		}
 	}
 class Savingaccount extends Bankaccount{
-	//@override
+	@override
 	public double pinnum(double p) {
 		double pin=p;
 			System.out.println("pin is" +pin);
 			return pin;
 		}
-	//@override
+	@override
 		public double transaction(double s) {
 			double transactionAmmount=s;
 			
